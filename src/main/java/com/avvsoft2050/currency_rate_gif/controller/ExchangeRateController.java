@@ -1,5 +1,6 @@
 package com.avvsoft2050.currency_rate_gif.controller;
 
+import com.avvsoft2050.currency_rate_gif.service.GetUrlFromGiphyService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
