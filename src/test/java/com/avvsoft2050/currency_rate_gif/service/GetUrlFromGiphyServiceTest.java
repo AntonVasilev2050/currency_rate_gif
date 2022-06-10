@@ -75,14 +75,16 @@ class GetUrlFromGiphyServiceTest {
         yesterdayExchangeRateDto.setRates(Map.of(TEST_UE, 60.000));
 
         when(exchangeRateClient
-                .getExchangeRatesForDate(TODAY,
+                .getExchangeRatesForDate(
+                        TODAY,
                         currencyAppId,
                         baseCurrency,
                         TEST_UE))
                 .thenReturn(todayExchangeRateDto);
 
         when(exchangeRateClient
-                .getExchangeRatesForDate(YESTERDAY,
+                .getExchangeRatesForDate(
+                        YESTERDAY,
                         currencyAppId,
                         baseCurrency,
                         TEST_UE))
@@ -105,14 +107,16 @@ class GetUrlFromGiphyServiceTest {
         yesterdayExchangeRateDto.setRates(Map.of(TEST_UE, 65.123));
 
         when(exchangeRateClient
-                .getExchangeRatesForDate(TODAY,
+                .getExchangeRatesForDate(
+                        TODAY,
                         currencyAppId,
                         baseCurrency,
                         TEST_UE))
                 .thenReturn(todayExchangeRateDto);
 
         when(exchangeRateClient.
-                getExchangeRatesForDate(YESTERDAY,
+                getExchangeRatesForDate(
+                        YESTERDAY,
                         currencyAppId,
                         baseCurrency,
                         TEST_UE))

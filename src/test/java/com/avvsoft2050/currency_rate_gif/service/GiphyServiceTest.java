@@ -64,7 +64,7 @@ class GiphyServiceTest {
     }
 
     @Test
-    void whenGetGiphyByRichTagThen() {
+    void whenGetGiphyByRichQueryThen() {
         when(giphyClient
                 .getGif(giphyApiKey, RICH, String.valueOf(LIMIT), RATING))
                 .thenReturn(giphyDtoRich);
@@ -72,7 +72,7 @@ class GiphyServiceTest {
     }
 
     @Test
-    void whenGetGiphyByBrokeTagThen() {
+    void whenGetGiphyByBrokeQueryThen() {
         when(giphyClient
                 .getGif(giphyApiKey, BROKE, String.valueOf(LIMIT), RATING))
                 .thenReturn(giphyDtoBroke);
